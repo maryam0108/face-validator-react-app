@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(203, 223, 241);
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    #delayedButton {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Face Validator React App</h1>
+    <div id="loginPopup" style=" position: fixed;
+	top: 70%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(200, 209, 209, 0.466); /* semi-transparent background */
+	padding: 20px;
+	color: white;
+	text-align: center; ">
+		<form>
+		  <button id="delayedButton" type="submit" style="background-color: #50fafa; border-radius: 2px;"><a href="index1.html" style="color: black;">LOG IN</a></button>
+		</form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Set a timeout to show the button after 15 seconds
+        setTimeout(function () {
+          document.getElementById('delayedButton').style.display = 'block';
+        }, 15000); // 15 seconds in milliseconds
+       });
+  </script>
+
+	  </div>
+  </div>
+</br></br>
+
+
+   <div>
+  <video id="video" width="720" height="560" autoplay muted></video>
+   </div>
+  </br></br>
+
+  
+
+</body>
+</html>
